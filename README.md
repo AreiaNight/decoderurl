@@ -40,9 +40,9 @@ go build -o uncodeurl main.go
 sudo mv uncodeurl /usr/local/bin/
 ```
 
-## Usage\
+## Usage
 
-![](/showg.png)
+![](https://github.com/AreiaNight/decoderurl/blob/main/show.png)
 
 ### Decode a URL (remove %)
 ```bash
