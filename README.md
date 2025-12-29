@@ -47,12 +47,12 @@ sudo mv uncodeurl /usr/local/bin/
 ### Decode a URL (remove %)
 ```bash
 uncodeurl u "https://example.com/hello%20world"
-# Output: https://example.com/hello world
+# Output: https://example.com/hello/world
 ```
 
 ### Encode a URL (add %)
 ```bash
-uncodeurl c "https://example.com/hello world"
+uncodeurl c "https://example.com/hello/world"
 # Output: https://example.com/hello%20world
 ```
 
