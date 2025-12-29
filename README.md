@@ -2,7 +2,7 @@
 
 A simple and fast command-line tool to decode (and encode) URLs. No more copying URLs to online tools or struggling to read percent-encoded mess.
 
-## ✨ Features
+## Features
 
 - **Decode URLs**: Remove percent-encoding (`%20` → space)
 - **Encode URLs**: Add percent-encoding (space → `%20`)
