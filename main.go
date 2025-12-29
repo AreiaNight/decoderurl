@@ -40,7 +40,7 @@ func main(){
         help()
         
     default:
-        fmt.Println("Comando no reconocido. Usa 'h' para ayuda.")
+        fmt.Println("[!]No command, exiting.")
         os.Exit(1)
     }
 }
@@ -65,10 +65,10 @@ func help(){
 
 // Decodifica URL (quita los %)
 func decodeURL(encodedURL string) string {
-    decodedURL, err := url.QueryUnescape(encodedURL)
+    decodedURL, err := url.PathUnescape(encodedURL)
     
     if err != nil {
-        log.Fatal("Error al decodificar:", err)
+        log.Fatal("[!]Error:", err)
     }
     
     return decodedURL
@@ -76,5 +76,5 @@ func decodeURL(encodedURL string) string {
 
 // Codifica URL (pone los %)
 func encodeURL(decodedURL string) string {
-    return url.QueryEscape(decodedURL)
+    return url.PathEscape(decodedURL)
 }
