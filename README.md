@@ -126,4 +126,4 @@ decodedgo --help
 
 ## 【𝑫𝒊𝒔𝒄𝒍𝒂𝒊𝒎𝒆𝒓】
 This project is a personal utility tool and will receive updates based on what I need. It is not intended as a production-grade solution.
-```
+
