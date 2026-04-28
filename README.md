@@ -9,7 +9,7 @@ This project is a simple command-line tool built in Go for encoding and decoding
 
 The tool focuses on simplicity and speed, making it useful for developers, analysts, or anyone needing quick Base64 or URL transformations directly from the terminal.
 
-<br><br><br>
+<br><br>
 
 ## 【𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔】
 * **Base64 Decoding**
