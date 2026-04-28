@@ -1,74 +1,124 @@
-# UnCodeURL
+Aquí va tu README con el mismo estilo:
 
-A simple and fast command-line tool to decode (and encode) URLs. No more copying URLs to online tools or struggling to read percent-encoded mess.
+# ✦•┈๑⋅⋯ 𝐃𝐞𝐜𝐨𝐝𝐞𝐝𝐆𝐨 ⋯⋅๑┈•✦
 
-## Features
+This project is a simple command-line tool built in Go for encoding and decoding Base64 files and URLs. It is designed for fast and clean output, allowing users to quickly transform data without heavy dependencies or complex setups.
 
-- **Decode URLs**: Remove percent-encoding (`%20` → space)
-- **Encode URLs**: Add percent-encoding (space → `%20`)
-- **Fast**: Written in Go, runs instantly
-- **Simple**: Just one command, no configuration needed
-- **Clean output**: No clutter, just the result
+The tool focuses on simplicity and speed, making it useful for developers, analysts, or anyone needing quick Base64 or URL transformations directly from the terminal.
 
-## Installation
-
-### Linux 
-
-Run the installation script:
-```bash
-chmod +x install.sh
-./install.sh
-```
-
-The script will:
-- Update your system
-- Install Go (if needed)
-- Compile and install `uncodeurl` to `/usr/local/bin`
-
-### Manual Installation
-
-1. Make sure you have Go installed:
-```bash
-go version
-```
-
-2. Clone and build:
-```bash
-git clone https://github.com/yourusername/uncodeurl.git
-cd uncodeurl
-go build -o uncodeurl main.go
-sudo mv uncodeurl /usr/local/bin/
-```
-
-## Usage
-
-![](https://github.com/AreiaNight/decoderurl/blob/main/show.png)
-
-### Decode a URL (remove %)
-```bash
-uncodeurl u "https://example.com/hello%20world"
-# Output: https://example.com/hello/world
-```
-
-### Encode a URL (add %)
-```bash
-uncodeurl c "https://example.com/hello/world"
-# Output: https://example.com/hello%20world
-```
-
-### Show help
-```bash
-uncodeurl h
-```
-## Commands
-
-| Command | Alias | Description |
-|---------|-------|-------------|
-| `u` | `uncode` | Decode URL (remove percent-encoding) |
-| `c` | `code` | Encode URL (add percent-encoding) |
-| `h` | `--help` | Show help message |
+## 【𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔】
+* **Base64 Decoding**
+  Reads and decodes a Base64-encoded file directly from disk.
+* **URL Decoding**
+  Strips percent-encoding from URLs, returning clean readable strings.
+* **URL Encoding**
+  Converts strings into percent-encoded URL format.
+* **Fast Execution**
+  Built in Go for instant performance.
+* **Minimal & Clean Output**
+  Focused results without unnecessary noise.
 
 ---
 
-**Note:** This tool uses Go's `net/url` package for encoding/decoding, which follows RFC 3986 standards.
+## 【𝑰𝒏𝒔𝒕𝒂𝒍𝒍𝒂𝒕𝒊𝒐𝒏】
 
+### Prerequisites
+* Go (1.18+ recommended)
+
+---
+
+### 【𝑴𝒂𝒏𝒖𝒂𝒍 𝑰𝒏𝒔𝒕𝒂𝒍𝒍】
+
+Linux and macOS:
+
+```bash
+git clone https://github.com/yourusername/DecodedGo.git
+cd decoded64
+go build -o decodedgo main.go
+```
+
+Move binary:
+```bash
+sudo mv decodedgo /usr/local/bin/
+```
+
+Or without sudo:
+```bash
+mkdir -p ~/.local/bin
+mv decodedgo ~/.local/bin/
+```
+
+### 【𝑰𝒏𝒔𝒕𝒂𝒍𝒍】
+
+```bash
+git clone https://github.com/yourusername/DecodedGo.git
+cd DecodedGo
+chmod +x install.sh #If using mac, use chmod +x installMac.sh
+./install.sh #Or ./installMac.sh for mac
+```
+
+---
+
+## 【𝑼𝒔𝒂𝒈𝒆】
+
+Decode a Base64 file:
+```bash
+decodedgo -b64 file.txt
+```
+
+Decode a URL:
+```bash
+decodedgo -u "https%3A%2F%2Fexample.com"
+```
+
+Encode a URL:
+```bash
+decodedgo -c "https://example.com"
+```
+
+---
+
+### Example Output
+
+```
+# Base64 decode
+Hello, World!
+
+# URL decode
+https://example.com/path?query=hello world
+
+# URL encode
+https%3A%2F%2Fexample.com%2Fpath%3Fquery%3Dhello%20world
+```
+
+---
+
+### Help
+```bash
+decodedgo --help
+```
+
+---
+
+## 【𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔】
+
+| Command                  | Description              |
+| ------------------------ | ------------------------ |
+| `decodedgo -b64 <file>`  | Decode a Base64 file     |
+| `decodedgo -u <url>`     | Decode a URL             |
+| `decodedgo -c <string>`  | Encode a string to URL   |
+| `--help`                 | Show help                |
+
+---
+
+## 【𝑵𝒐𝒕𝒆𝒔】
+* This tool is focused on **quick data transformation**
+* Base64 input must be a valid encoded file
+* URL encoding uses standard **path escaping**
+* Intended for **fast terminal use**, not full data pipelines
+
+---
+
+## 【𝑫𝒊𝒔𝒄𝒍𝒂𝒊𝒎𝒆𝒓】
+This project is a personal utility tool and will receive updates based on what I need. It is not intended as a production-grade solution.
+```
