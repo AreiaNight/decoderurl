@@ -4,7 +4,7 @@ Aquí va tu README con el mismo estilo:
 
 
 <img src="https://github.com/AreiaNight/DecodedGo/blob/main/assets/kory.jpg?width=770&height=578&fit=crop&format=pjpg&auto=webp" alt="img" align="right" width="400px"> <br><br>
-<br><br><br><br>
+<br><br><br>
 This project is a simple command-line tool built in Go for encoding and decoding Base64 files and URLs. It is designed for fast and clean output, allowing users to quickly transform data without heavy dependencies or complex setups.
 
 The tool focuses on simplicity and speed, making it useful for developers, analysts, or anyone needing quick Base64 or URL transformations directly from the terminal.
