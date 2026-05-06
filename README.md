@@ -1,5 +1,3 @@
-Aquí va tu README con el mismo estilo:
-
 # ✦•┈๑⋅⋯ 𝐃𝐞𝐜𝐨𝐝𝐞𝐝𝐆𝐨 ⋯⋅๑┈•✦
 
 
